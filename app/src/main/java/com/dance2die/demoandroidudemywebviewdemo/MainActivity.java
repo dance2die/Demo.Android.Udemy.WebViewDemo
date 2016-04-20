@@ -33,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
         WebView webView = (WebView) findViewById(R.id.webView);
 
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.setWebViewClient(new WebViewClient());  // need this line to open in webview, not in default browser.
+        // need this line to open in webview, not in default browser.
+        webView.setWebViewClient(new WebViewClient());
 //        webView.loadUrl("http://www.google.com");
         webView.loadData("<html><body><h1>Hello World!</h1><p>This is a paragraph</p></body></html>", "text/html", "UTF-8");
     }
